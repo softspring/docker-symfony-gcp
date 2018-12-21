@@ -19,8 +19,8 @@ WORKDIR "/${APP_DIR}"
 RUN mkdir -p "/${APP_DIR}"
 
 # Configure PHP
-COPY config/php7/conf.d/* $PHP_DIR/conf.d/
-COPY config/php7/php-fpm.d/* $PHP_DIR/php-fpm.d/
+COPY config/php7/conf.d/ $PHP_DIR/conf.d/
+COPY config/php7/php-fpm.d/ $PHP_DIR/php-fpm.d/
 
 # Configure nginx
 RUN mkdir -p /run/nginx
