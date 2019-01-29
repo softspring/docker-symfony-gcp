@@ -3,7 +3,7 @@ FROM softspring/symfony-gcp-php-base:latest
 RUN sed -e 's;^#http\(.*\)/v3.6/community;http\1/v3.6/community;g' -i /etc/apk/repositories
 
 RUN apk update && \
-    apk --no-cache add sudo php7-xdebug
+    apk --no-cache add sudo php7-xdebug git
 
 COPY scripts/dev /scripts/dev/
 COPY scripts/cmd.sh /scripts/
