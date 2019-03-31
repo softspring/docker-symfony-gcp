@@ -18,7 +18,7 @@ then
 fi
 
 sudo -E bash -c 'rm -f /etc/php7/conf.d/xdebug.ini'
-sudo -E bash -c 'echo "zend_extension=xdebug.so" >> /etc/php7/conf.d/50_xdebug.ini'
+sudo -E bash -c 'echo "zend_extension=xdebug.so" > /etc/php7/conf.d/50_xdebug.ini'
 sudo -E bash -c 'echo "xdebug.default_enable=1" >> /etc/php7/conf.d/50_xdebug.ini'
 sudo -E bash -c 'echo "xdebug.remote_enable=1" >> /etc/php7/conf.d/50_xdebug.ini'
 sudo -E bash -c 'echo "xdebug.remote_autostart=1" >> /etc/php7/conf.d/50_xdebug.ini'
