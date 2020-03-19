@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM php:7.3-alpine3.11
 
 # Install base packages: PHP, NGINX, SUPERVISOR
 RUN apk --no-cache add nginx supervisor bash php7 php7-fpm \
